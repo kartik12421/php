@@ -1,5 +1,5 @@
 <?php
-$grade = "A";
+$grade = "Ad";
 switch ($grade) {
     case "A":
         echo "You are topper";
@@ -19,5 +19,9 @@ switch ($grade) {
 
     case "F":
         echo "You failled";
+        break;
+
+    default:
+        echo "variable {$grade} is invalid";
         break;
 }
