@@ -21,8 +21,15 @@
 <?php
 $r = $_POST["r"];
 $circumference = 2 * pi() * $r;
-$area = pi() * $r * $r;
+$circumference = round($circumference, 2);
 
-echo "Circumference: {$circumference} <br>";
-echo "Area: {$area}";
+$area = pi() * pow($r, 2);
+$area = round($area, 2);
+
+$volume = 4 / 3 * pi() * pow($r, 3);
+$volume = round($volume, 2);
+
+echo "Circumference: {$circumference} cm <br>";
+echo "Area: {$area} cm^2 <br>";
+echo "Volume: {$volume} cm^2";
 ?>
